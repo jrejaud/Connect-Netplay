@@ -1,24 +1,5 @@
 #Powershell script to autoconnect netplay games in Dolphin
 
-<#
- .Synopsis
- Automatically opens Dolphin Emulator and connects to a host's Id
- .Description
- Connect-Netplay takes host Id as only parameter. It will then check if a dolphi n process is running. If it is, it will use that, if not it will create a new o ne. Then, it simulates keypresses to navigate the Dolphin IDE and paste the hos t id and connect.
- .Example
- Connect-NetPlay 8d838a54
- .Parameter hostCode
- Host id code to conect to
- .Inputs
- [string]
- .Notes
- NAME: Connect-Netplay
- AUTHOR: Jordan Rejaud
- LASTEDIT: 3/1/2015
- .Link
- https://github.com/jrejaud/Connect-Netplay
-#>
-
 Function Connect-Netplay 
 {
 	#hostCode is only parameter, and it is mandatory!
